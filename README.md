@@ -1,4 +1,4 @@
-"Data-Strcutures-and-Algorithms-in-Python" 
+"Data-Structures-and-Algorithms-in-Python" 
 
 There will be 100 days of Data structures and Algorithms coding in Python. 
 
