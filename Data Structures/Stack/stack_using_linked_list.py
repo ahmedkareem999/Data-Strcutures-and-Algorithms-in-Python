@@ -37,6 +37,8 @@ class Stack:
             self.top.data = self.top.next
             return top
 
+    # def peek(self):
+    #     return print(self.top.data)
     # Function to print the elements ofthe stack in the form of linkedlist
     def print_stack(self):
         if self.top is None:
@@ -51,6 +53,7 @@ while True:
     #Give input as string if getting an EOF error. Give input like "push 10" or "pop"
     print('push <value>')
     print('pop')
+    print('peek')
     print('print')
     print('quit')
     do = input('What would you like to do? ').split()
@@ -64,9 +67,10 @@ while True:
             print('Stack is empty.')
         else:
             print('Popped value: ', int(popped))
+    elif operation == 'peek':
+        stack.peek()
     elif operation == 'print':
         print("\nThe elements present in the stack that are represented in the form of linked list are:\n")
         stack.print_stack()
-        break
     elif operation == 'quit':
         break
